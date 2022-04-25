@@ -1,7 +1,14 @@
 import React from 'react'
 
+// Add routes here
+
 const App = () => {
-	return <h1>Hello World</h1>
+	return (
+		<div>
+			<h1>Hello World</h1>
+			<LoginScreen />
+		</div>
+	)
 }
 
 export default App

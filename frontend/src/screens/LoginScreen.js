@@ -1,7 +1,7 @@
 import React from 'react'
 
 const LoginScreen = () => {
-	return <div>LoginScreen</div>
+	return <div className='login'>Yep</div>
 }
 
 export default LoginScreen
