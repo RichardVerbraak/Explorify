@@ -1,3 +1,12 @@
-body {
-	background-color: red;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+// 1rem now equals 10 pixels -- REM (root element which is by default 16px)
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
 }
