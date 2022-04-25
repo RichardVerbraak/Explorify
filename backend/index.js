@@ -1,13 +1,41 @@
-const express = require('express')
+const { ApolloServer, gql } = require('apollo-server')
 
-const app = express()
+const typeDefs = gql`
+	type Book {
+		title: String
+		author: String
+	}
 
-const PORT = 5000
+	type Query {
+		books: [Book]
+	}
+`
 
-app.get('/', (req, res) => {
-	res.send('Hello there.')
-})
+const books = [
+	{
+		title: 'The Awakening',
+		author: 'Kate Chopin',
+	},
+	{
+		title: 'City of Glass',
+		author: 'Paul Auster',
+	},
+]
 
-app.listen(PORT, () => {
-	console.log(`Server is now up and running at ${PORT}`)
-})
+const resolvers = {
+	Query: {
+		books: () => {
+			return books
+		},
+	},
+}
+
+const server = new ApolloServer({ typeDefs, resolvers })
+
+const setupServer = async () => {
+	const { url } = await server.listen()
+
+	console.log(`Server is up at ${url}`)
+}
+
+setupServer()
