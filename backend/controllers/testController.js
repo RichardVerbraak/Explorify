@@ -1,5 +1,8 @@
-const test = (req, res) => {
-	res.status(200).send('Test')
+//  @desc       Get authorization to access the data
+//  @route      GET /api/authorization
+//  @access     Public
+const authorizeUser = async (req, res) => {
+	// const data = await fetch('https://api.spotify.com/v1')
 }
 
-export { test }
+export { authorizeUser }

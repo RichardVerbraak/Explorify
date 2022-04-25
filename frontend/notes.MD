@@ -2,7 +2,9 @@
 
 ============================
 
-## Creating a React Application without CRA
+## Frontend
+
+### Creating a React Application without CRA
 
     -   Create a package.json file and install both react and react-dom
 
@@ -14,3 +16,18 @@
         and install and add babel-loader to transpile said files before bundling
 
 ### Webpack Notes
+
+Webpack is used to minify and then bundle all of your (JS) files together so your end user downloads only a single minified bundle.js file.
+Based on the configuration, it will look up the files and bundle it appropriately.
+
+#### Loaders
+
+Loaders will determine how to minify and bundle the css and JS
+
+============================
+
+## Backend
+
+### Express
+
+### SpotifyAPI
