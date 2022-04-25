@@ -1,5 +1,8 @@
 import express from 'express'
 import testRoutes from './routes/testRoutes.js'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const app = express()
 
@@ -12,5 +15,5 @@ app.get('/', (req, res) => {
 app.use('/api/test', testRoutes)
 
 app.listen(PORT, () => {
-	console.log(`Server running at port ${PORT}`)
+	console.log(`Server running in ${process.env.NODE_ENV} at port ${PORT}`)
 })
