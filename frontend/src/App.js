@@ -1,13 +1,19 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Test from './components/Test'
+
 import LoginScreen from './screens/LoginScreen'
 
 // Add routes here
 
 const App = () => {
 	return (
-		<div>
-			<LoginScreen />
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route path='/' element={<LoginScreen />} />
+				<Route path='/test' element={<Test />} />
+			</Routes>
+		</BrowserRouter>
 	)
 }
 
