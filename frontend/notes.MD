@@ -20,9 +20,19 @@
 Webpack is used to minify and then bundle all of your (JS) files together so your end user downloads only a single minified bundle.js file.
 Based on the configuration, it will look up the files and bundle it appropriately.
 
-#### Loaders
+##### Webpack Config
 
-Loaders will determine how to minify and bundle the css and JS
+A list of some options you can use in the webpack.config file
+webpack-cli package enables you to create a custom config since webpack v4 doesn't even expect one
+webpack-dev-server for obvious reasons
+
+###### Loaders
+
+These can be configured inside a rules arrray which is under the "module" config object.
+This tells "Hey Webpack compiler when you come across a path that ends with a .js or .jsx file inside an import or require statement -
+use this (for example babel-loader) to transform it before you add it to the bundle.js file
+
+In other words, you tell webpack to determine how to minify and bundle the said files
 
 ============================
 

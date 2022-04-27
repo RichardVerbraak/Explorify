@@ -4,8 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack --mode=development"
+		"start": "webpack-dev-server",
+		"build": "webpack --mode=development",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "Richard Verbraak",
@@ -25,6 +26,7 @@
 		"style-loader": "^3.3.1",
 		"url-loader": "^4.1.1",
 		"webpack": "^5.72.0",
-		"webpack-cli": "^4.9.2"
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.8.1"
 	}
 }

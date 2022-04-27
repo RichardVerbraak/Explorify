@@ -6,7 +6,6 @@ import LoginScreen from './screens/LoginScreen'
 const App = () => {
 	return (
 		<div>
-			<h1>Hello World</h1>
 			<LoginScreen />
 		</div>
 	)
