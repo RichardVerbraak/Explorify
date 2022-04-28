@@ -34,9 +34,25 @@
 	}
 
 	&__text {
+		position: relative;
 		font-size: 1.8rem;
 		font-weight: 200;
 		color: white;
+
+		&::after {
+			content: '';
+
+			display: inline-block;
+			position: absolute;
+
+			top: 4.5rem;
+			left: 18%;
+
+			background-color: rgba($color: #fff, $alpha: 0.5);
+
+			width: 12rem;
+			height: 1px;
+		}
 	}
 
 	&__btn {
@@ -47,6 +63,6 @@
 		border: none;
 		border-radius: 3rem;
 
-		padding: 2rem 4.5rem;
+		padding: 1.5rem 4.5rem;
 	}
 }

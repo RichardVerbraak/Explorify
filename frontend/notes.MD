@@ -34,6 +34,8 @@ use this (for example babel-loader) to transform it before you add it to the bun
 
 In other words, you tell webpack to determine how to minify and bundle the said files
 
+NOTE: Images, fonts, icons etc. can now be used without loaders like url and file-loader thanks to Asset Modules since Webpack v5
+
 ============================
 
 ## Backend
