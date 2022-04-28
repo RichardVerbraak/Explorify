@@ -39,14 +39,16 @@
 		font-weight: 200;
 		color: white;
 
+		letter-spacing: 2px;
+
 		&::after {
 			content: '';
 
-			display: inline-block;
+			display: block;
 			position: absolute;
 
 			top: 4.5rem;
-			left: 18%;
+			left: 23%;
 
 			background-color: rgba($color: #fff, $alpha: 0.5);
 
