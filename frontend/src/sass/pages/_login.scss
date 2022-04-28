@@ -1,4 +1,9 @@
 .login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
 	background: linear-gradient(
 			0deg,
 			rgba(62, 111, 79, 0.48),
@@ -7,5 +12,32 @@
 		url('../assets/login-bg.jpg');
 
 	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+
+		height: 43rem;
+		width: 42rem;
+		background-color: #1f241e;
+
+		border-radius: 2rem;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 200;
+		color: white;
+	}
+
+	&__btn {
+		font-family: 'Poppins';
+		font-weight: bold;
+		color: white;
+		background-color: #1ed760;
+		border: none;
+		border-radius: 3rem;
+
+		padding: 2rem 4.5rem;
 	}
 }

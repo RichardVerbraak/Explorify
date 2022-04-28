@@ -2,9 +2,9 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Test from './components/Test'
 
-import LoginScreen from './screens/LoginScreen'
+import LoginScreen from './pages/LoginPage'
 
-// Add routes here
+// TODO: Make Private Route or use Redirect if user isn't authenticated
 
 const App = () => {
 	return (
