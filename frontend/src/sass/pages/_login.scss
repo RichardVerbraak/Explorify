@@ -60,11 +60,27 @@
 	&__btn {
 		font-family: 'Poppins';
 		font-weight: bold;
+		font-size: 1.8rem;
+
+		cursor: pointer;
+
 		color: white;
 		background-color: #1ed760;
+
 		border: none;
 		border-radius: 3rem;
 
+		transition: all 0.2s ease-in-out;
+
 		padding: 1.5rem 4.5rem;
+
+		&:hover {
+			transform: translateY(-4px);
+		}
+
+		// Goes down on click
+		&:active {
+			transform: translateY(0);
+		}
 	}
 }
