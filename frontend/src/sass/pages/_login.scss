@@ -1,7 +1,9 @@
 .login {
 	display: flex;
+
 	justify-content: center;
 	align-items: center;
+
 	height: 100vh;
 
 	background: linear-gradient(
@@ -10,6 +12,8 @@
 			rgba(62, 111, 79, 0.48)
 		),
 		url('../assets/login-bg.jpg');
+
+	background-size: cover;
 
 	&__box {
 		display: flex;
@@ -22,6 +26,11 @@
 		background-color: #1f241e;
 
 		border-radius: 2rem;
+	}
+
+	&__logo {
+		height: 6rem;
+		width: 6rem;
 	}
 
 	&__text {
