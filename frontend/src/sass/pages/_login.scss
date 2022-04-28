@@ -35,11 +35,11 @@
 
 	&__text {
 		position: relative;
-		font-size: 1.8rem;
-		font-weight: 200;
+		font-size: $font-medium;
+		font-weight: $font-light;
 		color: white;
 
-		letter-spacing: 2px;
+		letter-spacing: $letter-spacing;
 
 		&::after {
 			content: '';
@@ -59,13 +59,13 @@
 
 	&__btn {
 		font-family: 'Poppins';
-		font-weight: bold;
-		font-size: 1.8rem;
+		font-weight: $font-bold;
+		font-size: $font-medium;
 
 		cursor: pointer;
 
 		color: white;
-		background-color: #1ed760;
+		background-color: $color-spotify;
 
 		border: none;
 		border-radius: 3rem;
