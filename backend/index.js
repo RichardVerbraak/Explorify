@@ -1,6 +1,8 @@
 import express from 'express'
-import authRoutes from './routes/authRoutes.js'
 import dotenv from 'dotenv'
+
+import authRoutes from './routes/authRoutes.js'
+import tokenRoutes from './routes/tokenRoutes.js'
 
 dotenv.config()
 
@@ -13,6 +15,7 @@ const PORT = 5000
 // })
 
 app.use('/api/login', authRoutes)
+app.use('/callback', tokenRoutes)
 
 app.listen(PORT, () => {
 	console.log(`Server running in ${process.env.NODE_ENV} at port ${PORT}`)
