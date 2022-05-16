@@ -1,6 +1,8 @@
 import axios from 'axios'
 
 // Maybe change this to middleware
+// Redirect uri is visited after the user authorizes
+// This function will then post the auth info to the token api and return an access token if succesful
 const getAccessToken = async (req, res, next) => {
 	try {
 		const code = req.query.code || null
