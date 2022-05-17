@@ -30,6 +30,8 @@ const getAccessToken = async (req, res, next) => {
 		)
 
 		console.log(data)
+		req.token = data.access_token
+
 		res.send(data)
 	} catch (error) {
 		next(error)
