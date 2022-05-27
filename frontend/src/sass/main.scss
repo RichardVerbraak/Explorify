@@ -5,4 +5,12 @@
 @import './base/typography';
 @import './base/base';
 
+@import './layout/container';
+@import './layout/header';
+@import './layout/songs';
+
 @import './pages/login';
+@import './pages/home';
+
+@import './components/sidebar';
+@import './components/controls';

@@ -2,4 +2,12 @@
 
 // Create layout with grid or flexbox?
 .container {
+	height: 100%;
+
+	display: grid;
+	grid-template-areas:
+		'sidebar header header'
+		'sidebar songs songs'
+		'sidebar controls controls';
+	grid-template-columns: 1fr 5fr;
 }

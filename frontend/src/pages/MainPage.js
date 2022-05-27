@@ -36,9 +36,17 @@ const MainPage = () => {
 				</div>
 			</div>
 
-			<header className='header'></header>
+			<header className='header'>
+				<h1>Header</h1>
+			</header>
 
-			<section className='songs'></section>
+			<section className='songs'>
+				<h1>Songs</h1>
+			</section>
+
+			<div className='controls'>
+				<h1>Controls</h1>
+			</div>
 		</div>
 	)
 }

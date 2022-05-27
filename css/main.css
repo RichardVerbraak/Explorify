@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+}
+
+.header {
+  background-color: orangered;
+}
+
+.songs {
+  background-color: aquamarine;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(62, 111, 79, 0.48), rgba(62, 111, 79, 0.48)), url("../assets/login-bg.jpg");
+  background-size: cover;
+}
+.login__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 43rem;
+  width: 42rem;
+  background-color: #1f241e;
+  border-radius: 2rem;
+}
+.login__logo {
+  height: 6rem;
+  width: 6rem;
+}
+.login__text {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+.login__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4.5rem;
+  left: 23%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 12rem;
+  height: 1px;
+}
+.login__btn {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  background-color: hsl(141deg, 76%, 48%);
+  border: none;
+  border-radius: 3rem;
+  transition: all 0.2s ease-in-out;
+  padding: 1.5rem 4.5rem;
+}
+.login__btn:hover {
+  transform: translateY(-4px);
+}
+.login__btn:active {
+  transform: translateY(0);
+}
+
+.sidebar {
+  background-color: blue;
+}
+
+.controls {
+  background-color: black;
+}/*# sourceMappingURL=main.css.map */
