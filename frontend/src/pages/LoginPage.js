@@ -10,6 +10,7 @@ const Loginpage = () => {
 				<img src={SpotifyLogo} alt='Spotify Logo' className='login__logo' />
 				<p className='login__text'>Explore new sounds</p>
 				<button className='login__btn'>Login with Spotify</button>
+				<Link to='test'>Test</Link>
 			</div>
 		</div>
 	)
