@@ -18,6 +18,30 @@
 
 	margin-bottom: 6.5rem;
 
+	position: relative;
+
+	&::after {
+		content: '';
+		height: 1px;
+		width: 20rem;
+
+		// Separation line
+		background: linear-gradient(
+			to right,
+			rgba(white, 0.45) 20%,
+			rgba(white, 0.8),
+			rgba(white, 0.45) 80%
+		);
+
+		position: absolute;
+		bottom: -4.4rem;
+		left: 15%;
+	}
+
+	// border-width: 1px;
+	// border-style: solid;
+	// border-image: linear-gradient(to right, darkblue, darkorchid) 14;
+
 	&__logo {
 		height: 70px;
 		width: 65px;
