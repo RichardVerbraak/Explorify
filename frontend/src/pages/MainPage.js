@@ -1,5 +1,6 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
+
+import ExplorifyLogo from '../assets/explorify-logo.svg'
 
 // Create a context to share data?
 
@@ -7,26 +8,17 @@ const MainPage = () => {
 	return (
 		<div className='container'>
 			<div className='sidebar'>
-				<div className='categories'></div>
-			</div>
+				<div className='logo-box'>
+					<img
+						src={ExplorifyLogo}
+						alt='Explorify Logo'
+						className='logo-box__logo'
+					/>
+					<h1 className='logo-box__title'>Explorify</h1>
+				</div>
 
-			<header className='header'>
-				<h1>Header</h1>
-			</header>
-
-			<section className='songs'>
-				<h1>Songs</h1>
-			</section>
-
-			<div className='controls'>
-				<h1>Controls</h1>
-			</div>
-		</div>
-	)
-}
-
-{
-	/* <div className='category'>
+				<div className='categories'>
+					<div className='category'>
 						<h3 className='category__title'>Top Played Songs</h3>
 						<p className='category__time'>Last Month</p>
 						<p className='category__time'>Last 6 Months</p>
@@ -45,7 +37,23 @@ const MainPage = () => {
 						<p className='category__time'>Awesome List</p>
 						<p className='category__time'>Outrun</p>
 						<p className='category__time'>Some list</p>
-					</div> */
+					</div>
+				</div>
+			</div>
+
+			<header className='header'>
+				<h1>Header</h1>
+			</header>
+
+			<section className='songs'>
+				<h1>Songs</h1>
+			</section>
+
+			<div className='controls'>
+				<h1>Controls</h1>
+			</div>
+		</div>
+	)
 }
 
 export default MainPage
