@@ -5,21 +5,49 @@
 		rgba(30, 128, 81, 0.61) 192.71%
 	);
 
-	// display: flex;
-	// flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
 	grid-area: sidebar;
-	// padding: 2rem 4rem 4rem 4rem;
+	padding: 2rem 4rem 4rem 4rem;
 }
 
 // Add them under sidebar? sidebar__categories?
 .categories {
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: space-between;
+	display: flex;
+	flex-direction: column;
 
-	font-size: 1rem;
+	&__category {
+		&--title {
+			font-weight: $font-bold;
+			font-size: 2rem;
+			letter-spacing: $letter-spacing;
+		}
+
+		&--time {
+			font-weight: $font-regular;
+			font-size: $font-small;
+			letter-spacing: $letter-spacing;
+		}
+
+		&:first-child {
+			color: #91e6d1;
+		}
+	}
 }
 
 .logo-box {
+	display: flex;
+	align-items: center;
+
+	&__logo {
+		height: 70px;
+		width: 65px;
+	}
+
+	&__title {
+		font-size: $font-large;
+		font-weight: $font-regular;
+		letter-spacing: $letter-spacing;
+	}
 }

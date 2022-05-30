@@ -18,25 +18,25 @@ const MainPage = () => {
 				</div>
 
 				<div className='categories'>
-					<div className='category'>
-						<h3 className='category__title'>Top Played Songs</h3>
-						<p className='category__time'>Last Month</p>
-						<p className='category__time'>Last 6 Months</p>
-						<p className='category__time'>Last year</p>
+					<div className='categories__title'>
+						<h3 className='categories__category--title'>Top Played Songs</h3>
+						<p className='categories__category--time'>Last Month</p>
+						<p className='categories__category--time'>Last 6 Months</p>
+						<p className='categories__category--time'>Last year</p>
 					</div>
 
-					<div className='category'>
-						<h3 className='category__title'>Top Played Artists</h3>
-						<p className='category__time'>Last Month</p>
-						<p className='category__time'>Last 6 Months</p>
-						<p className='category__time'>Last year</p>
+					<div className='categories__category'>
+						<h3 className='categories__category--title'>Top Played Artists</h3>
+						<p className='categories__category--time'>Last Month</p>
+						<p className='categories__category--time'>Last 6 Months</p>
+						<p className='categories__category--time'>Last year</p>
 					</div>
 
-					<div className='category'>
-						<h3 className='category__title'>Playlists</h3>
-						<p className='category__time'>Awesome List</p>
-						<p className='category__time'>Outrun</p>
-						<p className='category__time'>Some list</p>
+					<div className='categories__category'>
+						<h3 className='categories__category--title'>Playlists</h3>
+						<p className='categories__category--time'>Awesome List</p>
+						<p className='categories__category--time'>Outrun</p>
+						<p className='categories__category--time'>Some list</p>
 					</div>
 				</div>
 			</div>
