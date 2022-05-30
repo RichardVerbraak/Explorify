@@ -18,25 +18,31 @@ const MainPage = () => {
 				</div>
 
 				<div className='categories'>
-					<div className='categories__title'>
-						<h3 className='categories__category--title'>Top Played Songs</h3>
-						<p className='categories__category--time'>Last Month</p>
-						<p className='categories__category--time'>Last 6 Months</p>
-						<p className='categories__category--time'>Last year</p>
+					<div className='category'>
+						<h3 className='category__title'>Top Played Songs</h3>
+						<div className='category__options'>
+							<p className='category__options--option'>Last Month</p>
+							<p className='category__options--option'>Last 6 Months</p>
+							<p className='category__options--option'>Last year</p>
+						</div>
 					</div>
 
-					<div className='categories__category'>
-						<h3 className='categories__category--title'>Top Played Artists</h3>
-						<p className='categories__category--time'>Last Month</p>
-						<p className='categories__category--time'>Last 6 Months</p>
-						<p className='categories__category--time'>Last year</p>
+					<div className='category'>
+						<h3 className='category__title'>Top Played Artists</h3>
+						<div className='category__options'>
+							<p className='category__options--option'>Last Month</p>
+							<p className='category__options--option'>Last 6 Months</p>
+							<p className='category__options--option'>Last year</p>
+						</div>
 					</div>
 
-					<div className='categories__category'>
-						<h3 className='categories__category--title'>Playlists</h3>
-						<p className='categories__category--time'>Awesome List</p>
-						<p className='categories__category--time'>Outrun</p>
-						<p className='categories__category--time'>Some list</p>
+					<div className='category'>
+						<h3 className='category__title'>Playlists</h3>
+						<div className='category__options'>
+							<p className='category__options--option'>Awesome List</p>
+							<p className='category__options--option'>Outrun</p>
+							<p className='category__options--option'>Some list</p>
+						</div>
 					</div>
 				</div>
 			</div>

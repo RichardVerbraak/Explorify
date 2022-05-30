@@ -9,45 +9,58 @@
 	flex-direction: column;
 
 	grid-area: sidebar;
-	padding: 2rem 4rem 4rem 4rem;
-}
-
-// Add them under sidebar? sidebar__categories?
-.categories {
-	display: flex;
-	flex-direction: column;
-
-	&__category {
-		&--title {
-			font-weight: $font-bold;
-			font-size: 2rem;
-			letter-spacing: $letter-spacing;
-		}
-
-		&--time {
-			font-weight: $font-regular;
-			font-size: $font-small;
-			letter-spacing: $letter-spacing;
-		}
-
-		&:first-child {
-			color: #91e6d1;
-		}
-	}
+	padding: 4rem 6rem 4rem 4rem;
 }
 
 .logo-box {
 	display: flex;
 	align-items: center;
 
+	margin-bottom: 6.5rem;
+
 	&__logo {
 		height: 70px;
 		width: 65px;
+
+		margin-right: 3.8rem;
 	}
 
 	&__title {
 		font-size: $font-large;
 		font-weight: $font-regular;
 		letter-spacing: $letter-spacing;
+	}
+}
+
+// Add them under sidebar? sidebar__categories?
+.categories {
+	display: flex;
+	flex-direction: column;
+}
+
+// Use flex spacing instead of padding later incase playlists get added etc.
+// Also make a scrollbar on the right side
+.category {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	&__title {
+		font-weight: $font-bold;
+		font-size: 2rem;
+		letter-spacing: $letter-spacing;
+		margin-bottom: 2rem;
+	}
+
+	&__options {
+		padding-left: 3rem;
+
+		&--option {
+			font-weight: $font-light;
+			font-size: $font-small;
+			letter-spacing: $letter-spacing;
+
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
 	}
 }

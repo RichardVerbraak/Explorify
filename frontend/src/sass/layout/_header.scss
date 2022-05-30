@@ -1,7 +1,10 @@
 .header {
+	grid-area: header;
+
 	background: url('../assets/Star\ BG\ Compressed.jpg');
 	background-repeat: no-repeat;
 	background-position: bottom left;
 	background-size: cover;
-	grid-area: header;
+
+	padding: 4rem 10rem;
 }
