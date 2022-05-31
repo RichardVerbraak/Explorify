@@ -10,7 +10,7 @@
 	background-position: bottom left;
 	background-size: cover;
 
-	padding: 4rem 10rem;
+	padding: 3rem 10rem;
 
 	// Container for pagination & profile
 	&__navigation {
@@ -46,6 +46,7 @@
 		}
 
 		&--cover {
+			// border-radius: 5px;
 		}
 	}
 
