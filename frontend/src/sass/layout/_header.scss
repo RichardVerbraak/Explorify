@@ -7,4 +7,46 @@
 	background-size: cover;
 
 	padding: 4rem 10rem;
+
+	&__profile {
+	}
+}
+
+.pagination {
+	&__arrow {
+		&--la {
+		}
+
+		&--ra {
+		}
+	}
+}
+
+.details {
+	&__album {
+		&--title {
+		}
+
+		&--cover {
+		}
+	}
+
+	&__playlist {
+		&--header {
+		}
+
+		&--title {
+		}
+
+		&--details {
+		}
+	}
+
+	&__song {
+		&--title {
+		}
+
+		&--artist {
+		}
+	}
 }

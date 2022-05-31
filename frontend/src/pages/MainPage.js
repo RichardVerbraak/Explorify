@@ -2,6 +2,12 @@ import React from 'react'
 
 import ExplorifyLogo from '../assets/explorify-logo.svg'
 
+// Spritemap?
+import LeftArrow from '../assets/left-arrow.svg'
+import RightArrow from '../assets/right-arrow.svg'
+
+import AlbumCover from '../assets/album-cover.svg'
+
 // Create a context to share data?
 
 const MainPage = () => {
@@ -48,7 +54,42 @@ const MainPage = () => {
 			</div>
 
 			<header className='header'>
-				<h1>Header</h1>
+				<div className='pagination'>
+					<img
+						className='pagination__arrow pagination__arrow--la'
+						src={LeftArrow}
+						alt='Left arrow'
+					/>
+					<img
+						className='pagination__arrow pagination__arrow--ra'
+						src={RightArrow}
+						alt='Right arrow'
+					/>
+				</div>
+				<div className='header__profile'>Profile icon</div>
+				<div className='details'>
+					<div className='details__album'>
+						<h2 className='details__album--title'>Currently Playing</h2>
+						<img
+							className='details__album--cover'
+							src={AlbumCover}
+							alt='Album cover'
+						/>
+					</div>
+					<div className='details__playlist'>
+						<h3 className='details__playlist--header'>Playlist</h3>
+						<h3 className='details__playlist--title'>Awesome List</h3>
+						<div className='details__playlist--details'>
+							<p>229 likes - 50 songs - 4 hours 42 min</p>
+						</div>
+						<div className='details__song'>
+							<h2 className='details__song--title'>Summertime Sadness</h2>
+							<h2 className='details__song--artist'>
+								Lana Del Rey, Cedric Gervais
+							</h2>
+						</div>
+					</div>
+				</div>
 			</header>
 
 			<section className='songs'>
