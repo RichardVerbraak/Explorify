@@ -1,6 +1,10 @@
 .header {
 	grid-area: header;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 	background: url('../assets/Star\ BG\ Compressed.jpg');
 	background-repeat: no-repeat;
 	background-position: bottom left;
@@ -8,23 +12,37 @@
 
 	padding: 4rem 10rem;
 
-	&__profile {
+	// Container for pagination & profile
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
 	}
-}
 
-.pagination {
-	&__arrow {
-		&--la {
-		}
+	&__pagination {
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 6%;
 
-		&--ra {
+		&--arrow {
 		}
+	}
+
+	&--profile {
 	}
 }
 
 .details {
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	align-items: flex-end;
+
 	&__album {
 		&--title {
+			margin-bottom: 2rem;
+			font-weight: $font-light;
+			font-size: 4rem;
+			letter-spacing: $letter-spacing;
 		}
 
 		&--cover {
@@ -32,21 +50,42 @@
 	}
 
 	&__playlist {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 65%;
+	}
+
+	&__info {
 		&--header {
+			font-weight: 500;
+			font-size: 2.4rem;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
 		}
 
 		&--title {
+			font-weight: 700;
+			font-size: 3rem;
+			letter-spacing: 0.05em;
 		}
 
-		&--details {
+		&--sub {
+			color: hsla(165, 63%, 74%, 1);
+			font-size: $font-small;
+			font-weight: 400;
 		}
 	}
 
 	&__song {
 		&--title {
+			font-weight: $font-light;
+			font-size: 3rem;
 		}
 
 		&--artist {
+			font-weight: $font-light;
+			font-size: 3rem;
 		}
 	}
 }

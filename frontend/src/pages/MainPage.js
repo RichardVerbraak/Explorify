@@ -54,19 +54,22 @@ const MainPage = () => {
 			</div>
 
 			<header className='header'>
-				<div className='pagination'>
-					<img
-						className='pagination__arrow pagination__arrow--la'
-						src={LeftArrow}
-						alt='Left arrow'
-					/>
-					<img
-						className='pagination__arrow pagination__arrow--ra'
-						src={RightArrow}
-						alt='Right arrow'
-					/>
+				<div className='header__navigation'>
+					<div className='header__pagination'>
+						<img
+							className='header__pagination--arrow'
+							src={LeftArrow}
+							alt='Left arrow'
+						/>
+						<img
+							className='header__pagination--arrow'
+							src={RightArrow}
+							alt='Right arrow'
+						/>
+					</div>
+					<div className='header__profile'>Profile icon</div>
 				</div>
-				<div className='header__profile'>Profile icon</div>
+
 				<div className='details'>
 					<div className='details__album'>
 						<h2 className='details__album--title'>Currently Playing</h2>
@@ -77,11 +80,14 @@ const MainPage = () => {
 						/>
 					</div>
 					<div className='details__playlist'>
-						<h3 className='details__playlist--header'>Playlist</h3>
-						<h3 className='details__playlist--title'>Awesome List</h3>
-						<div className='details__playlist--details'>
-							<p>229 likes - 50 songs - 4 hours 42 min</p>
+						<div className='details__info'>
+							<h3 className='details__info--header'>Playlist</h3>
+							<h3 className='details__info--title'>Awesome List</h3>
+							<p className='details__info--sub'>
+								229 likes - 50 songs - 4 hours 42 min
+							</p>
 						</div>
+
 						<div className='details__song'>
 							<h2 className='details__song--title'>Summertime Sadness</h2>
 							<h2 className='details__song--artist'>
