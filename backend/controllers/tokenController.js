@@ -31,9 +31,12 @@ const getAccessToken = async (req, res, next) => {
 
 		const { access_token, refresh_token } = data
 
-		res.redirect(
-			`http://localhost:/3000/?access_token=${access_token}&refresh_token=${refresh_token}`
-		)
+		const queryParams = new URLSearchParams({
+			access_token,
+			refresh_token,
+		})
+
+		res.redirect(`http://localhost:3000?${queryParams}`)
 	} catch (error) {
 		next(error)
 	}
