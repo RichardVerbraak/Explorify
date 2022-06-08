@@ -6,9 +6,13 @@ import axios from 'axios'
 const authorizeUser = async (req, res) => {
 	// Add spotify state param in uri later
 
-	res.redirect(
-		`https://accounts.spotify.com/authorize?response_type=code&client_id=${process.env.SPOTIFY_CLIENT_ID}&redirect_uri=${process.env.SPOTIFY_REDIRECT_URI}`
-	)
+	const queryParams = new URLSearchParams({
+		client_id: process.env.SPOTIFY_CLIENT_ID,
+		response_type: 'code',
+		redirect_uri: process.env.SPOTIFY_REDIRECT_URI,
+	}).toString()
+
+	res.redirect(`https://accounts.spotify.com/authorize?${queryParams}`)
 }
 
 //  @desc       Get authorization to access the data

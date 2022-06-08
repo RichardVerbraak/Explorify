@@ -29,9 +29,11 @@ const getAccessToken = async (req, res, next) => {
 			config
 		)
 
-		console.log(data)
-		req.token = data.access_token
-		console.log(req.token)
+		const { access_token, refresh_token } = data
+
+		res.redirect(
+			`http://localhost:/3000/?access_token=${access_token}&refresh_token=${refresh_token}`
+		)
 	} catch (error) {
 		next(error)
 	}

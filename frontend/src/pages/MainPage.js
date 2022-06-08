@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 
 import ExplorifyLogo from '../assets/explorify-logo.svg'
 
@@ -11,6 +12,10 @@ import AlbumCover from '../assets/album-cover.svg'
 // Create a context to share data?
 
 const MainPage = () => {
+	let params = useLocation()
+
+	console.log(params)
+
 	return (
 		<div className='container'>
 			<div className='sidebar'>
