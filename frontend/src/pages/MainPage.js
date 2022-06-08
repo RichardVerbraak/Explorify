@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import ExplorifyLogo from '../assets/explorify-logo.svg'
@@ -12,9 +12,21 @@ import AlbumCover from '../assets/album-cover.svg'
 // Create a context to share data?
 
 const MainPage = () => {
-	let params = useLocation()
+	const location = useLocation()
 
-	console.log(params)
+	useEffect(() => {
+		// Get search params
+		const queryString = location.search
+
+		// Use the URLSearchParams web api to get both tokens
+		const urlParams = new URLSearchParams(queryString)
+		const accessToken = urlParams.get('access_token')
+		const refreshToken = urlParams.get('refresh_token')
+
+		// Save to storage (Not sure if best practice)
+		localStorage.setItem('accessToken', accessToken)
+		localStorage.setItem('refreshToken', refreshToken)
+	}, [])
 
 	return (
 		<div className='container'>
